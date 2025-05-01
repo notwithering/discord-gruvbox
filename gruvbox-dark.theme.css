@@ -85,7 +85,7 @@
 	--gruv-dark-button-positive-default: var(--gruv-dark-green-dark);
 	--gruv-dark-button-positive-hover:   rgba(var(--gruv-dark-green-dark), 0.8);
 	
-	--gruv-dark-input-box-background: var(--gruv-dark-bg-soft);
+	--gruv-dark-input-box-background: var(--gruv-dark-bg);
 
 	--gruv-dark-scrollbar-color: var(--gruv-dark-bg3);
 	--gruv-dark-scrollbar-background: transparent;
@@ -113,7 +113,7 @@
 	--background-primary:  rgba(var(--gruv-dark-bg));      /* #282828 */
 	--background-secondary: rgba(var(--gruv-dark-bg-alt)) ; /* #212121 */
 	--background-secondary-alt: rgba(var(--gruv-dark-bg-soft));
-	--background-tertiary: rgba(var(--gruv-dark-bg-soft)); /* #32302f */
+	--background-tertiary: rgba(var(--gruv-dark-bg)); /* #32302f */
 
 	--background-base-lower: rgba(var(--gruv-dark-bg));
 	--background-base-low: rgba(var(--gruv-dark-bg));
@@ -548,7 +548,7 @@
 .connection_c7f964,
 .connectContainer_c7f964,
 .appDetailsContainer__50a54 {
-    background-color: rgba(var(--gruv-dark-bg-soft));
+    background-color: rgba(var(--gruv-dark-bg));
 	border: 1px solid rgba(var(--gruv-dark-border-default))
 }
 
@@ -596,6 +596,7 @@
 .visual-refresh [class^=box_],
 [class^=appDetailsContainer],
 [class^=connectionOptionsWrapper] {
+    border-radius: inherit;
 	background-color: var(--background-base-low) !important
 }
 
@@ -620,13 +621,30 @@
 
 /* extra flattened tweaks */
 
+.accountBtnInner__750de {
+    background-color: rgba(var(--gruv-dark-bg-soft));
+}
+
+.background__1fed1,
+.authedAppV2__50a54,
 .overlay_c0bea0 {
+    background-color: rgba(var(--gruv-dark-bg));
     border: 1px solid var(--border-faint);
     border-radius: 8px;
+}
+
+.appDetailsContainer__50a54,
+.headerV2__50a54 {
+    background-color: rgba(var(--gruv-dark-bg));
+    border: none;
 }
 
 .footerButtonColor__7f9c0,
 .none_d125d2 {
     border-radius: 0;
     border-left: 1px solid var(--border-faint)
+}
+
+.connectionHeader_c7f964 {
+    background-color: var(--gruv-dark-bg);
 }
