@@ -8,7 +8,7 @@
 */
 
 * {
-	--gruv-dark-bg: 29, 32, 33;
+	--gruv-dark-bg-hard: 29, 32, 33;
 	--gruv-dark-bg: 40 40 40;
 	--gruv-dark-bg-alt: 33, 33, 33;
 	--gruv-dark-bg-soft: 50, 48, 47;
@@ -647,4 +647,14 @@
 
 .connectionHeader_c7f964 {
     background-color: var(--gruv-dark-bg);
+}
+
+/* kill the top bar, nobody uses inbox anyways */
+
+.visual-refresh {
+    --custom-app-top-bar-height: 8px;
+}
+
+.bar_c38106 {
+    display: none;
 }
