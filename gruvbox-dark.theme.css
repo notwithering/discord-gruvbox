@@ -8,7 +8,7 @@
 */
 
 * {
-	--gruv-dark-bg-hard: 29, 32, 33;
+	--gruv-dark-bg: 29, 32, 33;
 	--gruv-dark-bg: 40 40 40;
 	--gruv-dark-bg-alt: 33, 33, 33;
 	--gruv-dark-bg-soft: 50, 48, 47;
@@ -107,7 +107,7 @@
 [class*=vc-membercount-total], /* vesktop plugin */
 .visual-refresh,
 .theme-dark {
-	--__header-bar-background: rgba(var(--gruv-dark-bg-hard));
+	--__header-bar-background: rgba(var(--gruv-dark-bg));
 	--autocomplete-bg: rgba(var(--gruv-dark-bg));
 
 	--background-primary:  rgba(var(--gruv-dark-bg));      /* #282828 */
@@ -117,10 +117,10 @@
 
 	--background-base-lower: rgba(var(--gruv-dark-bg));
 	--background-base-low: rgba(var(--gruv-dark-bg));
-	--background-base-lowest: rgba(var(--gruv-dark-bg-hard));
-	--background-floating: rgba(var(--gruv-dark-bg-hard)); /* #1d2021 */
+	--background-base-lowest: rgba(var(--gruv-dark-bg));
+	--background-floating: rgba(var(--gruv-dark-bg)); /* #1d2021 */
 
-	--background-surface-high: rgba(var(--gruv-dark-bg-soft));
+	--background-surface-high: rgba(var(--gruv-dark-bg));
 	--background-surface-higher: rgba(var(--gruv-dark-bg));
 	--background-surface-highest: rgba(var(--gruv-dark-bg));
 
@@ -140,11 +140,11 @@
 
 	--bg-base-primary: rgba(var(--gruv-dark-bg));
 	--bg-base-secondary: rgba(var(--gruv-dark-bg)); 
-	--bg-base-tertiary: rgba(var(--gruv-dark-bg-hard));
+	--bg-base-tertiary: rgba(var(--gruv-dark-bg));
 	
 	--bg-surface-overlay: rgba(var(--gruv-dark-bg));
 
-	--card-primary-bg:  rgba(var(--gruv-dark-bg-hard));
+	--card-primary-bg:  rgba(var(--gruv-dark-bg));
 
 	--bg-brand: rgba(var(--gruv-dark-accent), 0.8);
 
@@ -216,7 +216,7 @@
 	--input-border: rgba(var(--gruv-dark-border-default));
 	--input-placeholder-text: rgba(var(--gruv-dark-text-tertiary));
 
-	--modal-background: rgba(var(--gruv-dark-bg-hard));
+	--modal-background: rgba(var(--gruv-dark-bg));
 	--modal-footer-background: rgba(var(--gruv-dark-bg));
 
 	--mention-foreground: rgba(var(--gruv-dark-fg-hard));
@@ -265,7 +265,7 @@
 	--primary-630: rgba(var(--gruv-dark-button-alt-default));
 	--primary-700: rgba(var(--gruv-dark-button-alt-hover));
 
-	--background-code: rgba(var(--gruv-dark-bg-hard));
+	--background-code: rgba(var(--gruv-dark-bg));
 
 	--status-online: rgba(var(--gruv-dark-status-online));
 	--status-offline: rgba(var(--gruv-dark-status-offline));
@@ -317,7 +317,7 @@
 	--spoiler-hidden-background: rgba(var(--gruv-dark-bg2));
 	--spoiler-hidden-background-hover: rgba(var(--gruv-dark-bg3));
 
-	--chat-background-default: rgba(var(--gruv-dark-bg-soft));
+	--chat-background-default: rgba(var(--gruv-dark-bg));
 	--premium-nitro-pink-text: rgba(var(--gruv-dark-purple-light));
 	--guild-boosting-pink: rgba(var(--gruv-dark-purple-light));
 	--spine-default: rgba(var(--gruv-dark-bg4));
@@ -411,7 +411,7 @@
 /* call container bg */
 [class^=callContainer],
 [class^=callContainer] [class^=scroller_] {
-  background-color: rgba(var(--gruv-dark-bg-hard));
+  background-color: rgba(var(--gruv-dark-bg));
 }
 /* Room preview animation */
 .gradientBackground__11664 {
@@ -473,7 +473,7 @@
 }
 
 [class^=callContainer] [class^=root] {
-  background-color: rgba(var(--gruv-dark-bg-hard)) !important
+  background-color: rgba(var(--gruv-dark-bg)) !important
 }
 
 .flex__7c0ba .lineClamp1__4bd52 {
@@ -601,7 +601,7 @@
 
 /* Make all titlebars the same */
 .visual-refresh .title_f75fb {
-	background-color: rgba(var(--gruv-dark-bg-hard)) !important
+	background-color: rgba(var(--gruv-dark-bg)) !important
 }
 
 /* Remove bottom border for server title section */
@@ -618,3 +618,15 @@
 	display: none !important
 }
 
+/* extra flattened tweaks */
+
+.overlay_c0bea0 {
+    border: 1px solid var(--border-faint);
+    border-radius: 8px;
+}
+
+.footerButtonColor__7f9c0,
+.none_d125d2 {
+    border-radius: 0;
+    border-left: 1px solid var(--border-faint)
+}
