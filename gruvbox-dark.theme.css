@@ -369,7 +369,7 @@
 }
 
 .visual-refresh .textBadge__2b1f5 {
-	color: rgb(var(--gruv-dark-text-inverted)) !important
+	color: rgb(var(--gruv-dark-fg2)) !important
 }
 
 /* Invite button inside call box */
